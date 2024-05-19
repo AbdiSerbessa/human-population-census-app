@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>POPULATION CENSUS</title>
+	<link href="assets/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/responsiveslides.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="assets/js/responsiveslides.min.js"></script>
+
+	<script src="assets/js/anychart-base.min.js"></script>
+	<script src="assets/js/anychart-core.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			// Slideshow 1
+			$("#slider1").responsiveSlides({
+				maxwidth: 1600,
+				speed: 600
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!--start-wrap-->
+
+	<!--start-header-->
+	<div style="background:#ec0e84" class="header">
+		<div class="wrap">
+			<!--start-logo-->
+			<div class="logo">
+				<a href="index.html"><img style="height: 100px;" src="assets/img/siidaa most.jpg"></img></a>
+			</div>
+			<!--end-logo-->
+			<!--start-top-nav-->
+			<div class="top-nav">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+
+					<li><a href="contact_us.php">contact</a></li>
+					<li><a href="about_us.html">About</a></li>
+					<li><a href="./cms.php">Login</a></li>
+					<li><a href="./signup.php">Signup</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			<!--end-top-nav-->
+		</div>
+		<!--end-header-->
+	</div>
+	<div class="clear"> </div>
+	<!--start-image-slider---->
+	<div style="display:inline-block; height: 400px;width:400px;" id="graph"></div>
+	<div style="display:inline;" class="image-slider">
+		<!-- Slideshow 1 -->
+		<ul style="display:inline;" class="rslides" id="slider1">
+
+			<li><img src="assets/img/ADAMA.webp" style="width:100%;height:400px" alt=""></li>
+			<li><img src="assets/img/a (1).jpg" style="width:100%;height:400px" alt=""></li>
+			<li><img src="assets/img/a (2).jpg" style="width:100%;height:400px" alt=""></li>
+			<li><img src="assets/img/a (3).jpg" style="width:100%;height:400px" alt=""></li>
+			<li><img src="assets/img/a (4).jpg" style="width:100%;height:400px" alt=""></li>
+			<li><img src="assets/img/a (5).jpg" style="width:100%;height:400px" alt=""></li>
+			<li><img src="assets/img/a.jpeg" style="width:100%;height:400px" alt=""></li>
+
+		</ul>
+
+
+		<!-- Slideshow 2 -->
+	</div>
+
+
+	<!--End-image-slider---->
+	<div class="clear"> </div>
+	<div class="content-grids">
+		<div class="wrap">
+			<div class="section group">
+
+
+				<div class="listview_1_of_3 images_1_of_3">
+					<div class="listimg listimg_1_of_2">
+						<img src="assets/img/grid-img3.png">
+					</div>
+					<div class="text list_1_of_2">
+						<h3>Data analysis</h3>
+						<p>view the census report for Each state</p>
+						<div class="button"><span><a href="./cms.php">Click Here</a></span></div>
+					</div>
+				</div> 
+
+				<div class="listview_1_of_3 images_1_of_3">
+					<div class="listimg listimg_1_of_2">
+						<img src="assets/img/grid-img1.png">
+					</div>
+					<div class="text list_1_of_2">
+						<h3>User Login</h3>
+						<p>Log in as a guest to get census reports</br></br></br></p>
+
+
+						<div class="button"><span><a href="./cms.php">Click Here</a></span></div>
+					</div>
+				</div>
+
+
+				<div class="listview_1_of_3 images_1_of_3">
+					<div class="listimg listimg_1_of_2">
+						<img src="assets/img/grid-img2.png">
+					</div>
+					<div class="text list_1_of_2">
+						<h3>officier Login</h3>
+						</br></br></br></br>
+						<div class="button"><span><a href="./cms.php">Click Here</a></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="content-box">
+			<div class="section group">
+				
+				<div class="col_1_of_3 span_1_of_3 frist">
+				</div>
+
+				<div class="col_1_of_3 span_1_of_3 second">
+				</div>
+
+				<div class="col_1_of_3 span_1_of_3 frist">
+                </div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="clear"> </div>
+	
+	<!-- end-wrap
+</body>
+
+</html>
+<script>
+
+
+	var data = [
+		["1950", 37859745],
+		["1960", 45138458],
+		["1970", 55982144],
+		["1980", 73423633],
+		["1985", 83562785],
+		["1990", 95212450],
+		["1995", 107948335],
+		["2005", 138865016],
+		["2015", 181137448],
+		["2023", 220271998]
+
+	];
+
+	// create the chart
+	var chart = anychart.bar();
+	var series = chart.bar(data);
+	chart.height('400px');
+	chart.title("Total population of Adama")
+	chart.width('100%');
+	chart.container("graph");
+	chart.draw();
+
+
+
+
+</script>
