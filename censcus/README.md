@@ -2,7 +2,7 @@
 
 <b>web: HTML, CSS, Javascript, PHP and mysql</b>
 
-<h3>it's a final year project which works on web and it has the following functionalities:</h3>
+<h3>it's a  project which works on web and it has the following functionalities:</h3>
 <ul>
 <li>admins can manage(create, delete and edit) users</li>
 <li>admins, supervisors and enumerators can view reports and lists of person registered</li>
